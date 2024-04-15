@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplicationproject.AjouterEquipeController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="343.60003662109375" minWidth="10.0" prefWidth="157.1999755859375" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="427.5999755859375" minWidth="10.0" prefWidth="181.9999755859375" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="427.5999755859375" minWidth="10.0" prefWidth="162.80002441406248" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="427.5999755859375" minWidth="10.0" prefWidth="202.5999694824219" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <TextField fx:id="nomfield" prefHeight="26.0" prefWidth="193.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <DatePicker fx:id="dfondationDATE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </DatePicker>
+      <Label fx:id="Nom" text="Nom de L'équipe" textFill="#1d1f20" GridPane.rowIndex="1">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="coach" text="Nom et Prénom de coach actuel" textFill="#1d1f20" GridPane.columnSpan="2" GridPane.rowIndex="3">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Spinner fx:id="BudgetSpinner" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="20.0" />
+         </GridPane.margin>
+      </Spinner>
+      <Text fx:id="titre" fill="#0598ff" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Veuillez remplir le formulaire suivant :" GridPane.columnSpan="2">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Text>
+      <Label fx:id="Lige" text="Ligue" textFill="#1d1f20" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="propriétaire" text="Nom et Prénom de Propriétaire" textFill="#1d1f20" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="budget" text="Budget" textFill="#1d1f20" GridPane.rowIndex="4">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Button fx:id="ValiderAjoutEquiper" mnemonicParsing="false" onAction="#addEquipe" text="VALIDER" GridPane.columnIndex="3" GridPane.rowIndex="7">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="70.0" />
+         </GridPane.margin>
+      </Button>
+      <Text fx:id="Dfondation" strokeType="OUTSIDE" strokeWidth="0.0" text="Date de Fondation" wrappingWidth="156.800030708313" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="Descriptionfield" prefHeight="122.0" prefWidth="474.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="5" GridPane.rowSpan="2">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+      </TextArea>
+      <Label fx:id="Description" text="Description" textFill="#1d1f20" GridPane.rowIndex="5">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </Label>
+      <TextField fx:id="propriétairefield" prefHeight="26.0" prefWidth="193.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <TextField fx:id="coachfield" prefHeight="26.0" prefWidth="193.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets right="20.0" />
+         </GridPane.margin>
+      </TextField>
+      <ChoiceBox fx:id="ChoiceLeague" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </GridPane.margin>
+      </ChoiceBox>
+   </children>
+</GridPane>

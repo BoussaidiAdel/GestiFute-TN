@@ -1,0 +1,1 @@
+Contrat{numeroContrat=1, type=Entreprise-Manager, idparti1=12, idparti2=5, dateDebut=2023-12-22, dateFin=2023-12-31, montant=1, statut=AA, Description=Oui}
