@@ -25,6 +25,15 @@ GestiFute-TN is an application designed and developed for managing sports profil
 ## Contributors
 - [Yassine Lamouchi]((https://github.com/yassinelamouchi)
 
+## Contributing
+We welcome contributions! Please follow these guidelines:
+
+- Fork the repository.
+- Create a branch: git checkout -b feature/my-feature.
+- Commit your changes: git commit -m 'Add some feature'.
+- Push to the branch: git push origin feature/my-feature.
+- Open a pull request.
+
 ## Contact
 For any inquiries or feedback, please contact [Boussaidi Adel](mailto:Boussaidi0adel@gmail.com).
 
